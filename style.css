@@ -1,0 +1,176 @@
+/* ============================================================
+   Archive Génie Industriel — ENIT
+   Style « journal académique » : sobre, imprimé, sans fioritures.
+   ============================================================ */
+
+:root {
+    --ink:    #1c1a17;   /* texte */
+    --paper:  #f7f5ef;   /* fond papier */
+    --sheet:  #fffefb;   /* feuille centrale */
+    --rule:   #8a8578;   /* filets */
+    --accent: #6e1423;   /* bordeaux académique */
+    --link:   #1a3a6b;   /* bleu encre */
+    --visited:#5b3a7e;
+}
+
+html { background: var(--paper); }
+
+body {
+    background: var(--sheet);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 780px;
+    margin: 26px auto 40px;
+    padding: 34px 40px 46px;
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--accent);
+    box-shadow: 0 1px 4px rgba(40,35,25,.12);
+}
+
+/* ---- Liens : encre bleue, violet une fois visité ---- */
+a         { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:visited { color: var(--visited); }
+a:hover   { color: var(--accent); }
+
+/* ---- En-tête façon manchette de revue ---- */
+.site-header { text-align: center; margin-bottom: 10px; }
+
+.site-header .school {
+    font-size: 12.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6a655a;
+    margin: 0 0 10px;
+}
+.site-header h1 {
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: .5px;
+    margin: 0;
+}
+.site-header h1 .amp { color: var(--accent); }
+.site-header .tagline {
+    font-style: italic;
+    color: #55503f;
+    margin: 8px 0 0;
+    font-size: 15px;
+}
+
+/* Filet double « thick & thin » sous la manchette */
+hr.double {
+    border: none;
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    height: 3px;
+    margin: 18px 0 26px;
+}
+hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 26px 0;
+}
+
+/* ---- Navigation ---- */
+.nav {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 12px 0 2px;
+}
+.nav a { text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+.nav span { color: var(--rule); margin: 0 8px; }
+
+/* ---- Titres de section ---- */
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 5px;
+    margin-top: 36px;
+}
+
+/* ---- Grands liens vers les années (accueil) ---- */
+.years { margin: 26px 0; }
+.year-link {
+    display: block;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    padding: 15px 20px;
+    margin: 14px 0;
+    text-decoration: none;
+    background: #fbfaf5;
+}
+.year-link:hover { background: #f3f1e8; }
+.year-link .yr-title {
+    font-size: 19px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.year-link .yr-desc {
+    display: block;
+    font-size: 14px;
+    color: #55503f;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+/* ---- Tableaux des matières ---- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 30px;
+    font-size: 15.5px;
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+}
+th, td {
+    border-bottom: 1px solid #ccc8ba;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    font-weight: normal;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    border-bottom: 1px solid var(--ink);
+    background: none;
+}
+td.links, th.c { text-align: center; white-space: nowrap; }
+tr:hover td { background: #f5f3ea; }
+
+/* Lien non disponible */
+.na { color: #b3ad9e; }
+
+/* ---- Ornement & pied de page ---- */
+.ornament {
+    text-align: center;
+    color: var(--accent);
+    font-size: 18px;
+    letter-spacing: 10px;
+    margin: 34px 0 0;
+}
+.site-footer {
+    font-size: 13.5px;
+    color: #6a655a;
+    text-align: center;
+    margin-top: 12px;
+}
+.site-footer p { margin: 4px 0; }
+
+/* ---- Petits écrans ---- */
+@media (max-width: 620px) {
+    body { margin: 0; padding: 22px 14px 40px; border-left: none; border-right: none; font-size: 16px; }
+    .site-header h1 { font-size: 26px; }
+    table { font-size: 14px; }
+    th, td { padding: 6px 6px; }
+    td.links { white-space: normal; }
+}
