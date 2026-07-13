@@ -21,95 +21,29 @@
 <hr class="double">
 
 <!-- ============================================================
-     MODE D'EMPLOI (visible uniquement dans le code) :
+     Chaque matière pointe vers sa propre page dans matieres/,
+     où se trouvent les cours, examens et corrections.
 
-     Pour chaque matière, remplacez les liens "#" par vos liens
-     Google Drive (fichier ou dossier partagé).
-
-     Exemple :
-       <td class="links"><a href="https://drive.google.com/drive/folders/XXXX">Ouvrir</a></td>
-
-     Si un document n'existe pas encore, laissez :
-       <td class="links"><span class="na">—</span></td>
-
-     Pour ajouter une matière : copiez-collez une ligne <tr> ... </tr>.
-     Les noms de matières ci-dessous sont des exemples — adaptez-les
-     au vrai programme de votre département.
+     Pour ajouter une matière : copiez une ligne <li>...</li> ci-dessous
+     ET créez le fichier correspondant dans matieres/ (voir README).
      ============================================================ -->
 
 <h2>Semestre 1</h2>
-<table>
-    <tr>
-        <th>Matière</th>
-        <th class="c" style="width:16%">Cours</th>
-        <th class="c" style="width:16%">Examens</th>
-        <th class="c" style="width:16%">Corrections</th>
-    </tr>
-    <tr>
-        <td>Analyse</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-    </tr>
-    <tr>
-        <td>Algèbre</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><span class="na">—</span></td>
-    </tr>
-    <tr>
-        <td>Probabilités &amp; Statistiques</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-    </tr>
-    <tr>
-        <td>Mécanique générale</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-    </tr>
-    <tr>
-        <td>Informatique / Programmation</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><span class="na">—</span></td>
-    </tr>
-</table>
+<ul class="course-list">
+        <li><a href="matieres/1a-analyse.html"><span>Analyse</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-algebre.html"><span>Algèbre</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-probabilites-statistiques.html"><span>Probabilités &amp; Statistiques</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-mecanique-generale.html"><span>Mécanique générale</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-informatique-programmation.html"><span>Informatique / Programmation</span><span class="arrow">→</span></a></li>
+</ul>
 
 <h2>Semestre 2</h2>
-<table>
-    <tr>
-        <th>Matière</th>
-        <th class="c" style="width:16%">Cours</th>
-        <th class="c" style="width:16%">Examens</th>
-        <th class="c" style="width:16%">Corrections</th>
-    </tr>
-    <tr>
-        <td>Recherche opérationnelle</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-    </tr>
-    <tr>
-        <td>Électrotechnique</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-    </tr>
-    <tr>
-        <td>Gestion de production</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><span class="na">—</span></td>
-    </tr>
-    <tr>
-        <td>Thermodynamique</td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-        <td class="links"><a href="#">Ouvrir</a></td>
-    </tr>
-</table>
+<ul class="course-list">
+        <li><a href="matieres/1a-recherche-operationnelle.html"><span>Recherche opérationnelle</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-electrotechnique.html"><span>Électrotechnique</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-gestion-production.html"><span>Gestion de production</span><span class="arrow">→</span></a></li>
+        <li><a href="matieres/1a-thermodynamique.html"><span>Thermodynamique</span><span class="arrow">→</span></a></li>
+</ul>
 
 <p><em>Un document manque ? Une erreur dans une correction ?
 <a href="index.html#apropos">Contactez-nous</a> pour contribuer.</em></p>
