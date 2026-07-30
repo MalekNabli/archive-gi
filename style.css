@@ -237,7 +237,7 @@ tr:hover td { background: #f5f3ea; }
 }
 
 @media (max-width: 620px) {
-    .logo-left  { height: 54px; }
-    .logo-right { height: 70px; }
+    .logo-left  { height: 60px; }
+    .logo-right { height: 80px; }
     .site-header { padding-top: 60px; }
 }
