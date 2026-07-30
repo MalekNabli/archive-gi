@@ -214,3 +214,19 @@ tr:hover td { background: #f5f3ea; }
     th, td { padding: 6px 6px; }
     td.links { white-space: normal; }
 }
+
+/* ---- Logos ENIT / UTM ---- */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    margin-bottom: 14px;
+}
+.logos img {
+    height: 62px;
+    width: auto;
+}
+@media (max-width: 620px) {
+    .logos img { height: 46px; }
+}
