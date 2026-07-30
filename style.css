@@ -221,11 +221,16 @@ tr:hover td { background: #f5f3ea; }
     text-align: center;
     padding: 0 0 10px;
 }
-.logo-left,
-.logo-right {
+.logo-left{
     position: absolute;
     top: 0;
     height: 115px;
+    width: auto;
+}
+.logo-right {
+    position: absolute;
+    top: 0;
+    height: 130px;
     width: auto;
 }
 .logo-left  { left: 0; }
