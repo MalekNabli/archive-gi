@@ -221,23 +221,23 @@ tr:hover td { background: #f5f3ea; }
     text-align: center;
     padding: 0 0 10px;
 }
-.logo-left{
+.logo-left {
     position: absolute;
     top: 0;
-    height: 115px;
+    left: 0;
+    height: 100px;
     width: auto;
 }
 .logo-right {
     position: absolute;
     top: 0;
+    right: 0;
     height: 130px;
     width: auto;
 }
-.logo-left  { left: 0; }
-.logo-right { right: 0; }
 
 @media (max-width: 620px) {
-    .logo-left,
-    .logo-right { height: 54px; }
+    .logo-left  { height: 54px; }
+    .logo-right { height: 70px; }
     .site-header { padding-top: 60px; }
 }
