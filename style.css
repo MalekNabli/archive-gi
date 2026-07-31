@@ -230,7 +230,7 @@ tr:hover td { background: #f5f3ea; }
 }
 .logo-right {
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 0;
     height: 130px;
     width: auto;
