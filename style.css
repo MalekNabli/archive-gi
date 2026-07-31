@@ -223,7 +223,7 @@ tr:hover td { background: #f5f3ea; }
 }
 .logo-left {
     position: absolute;
-    top: 18px;
+    top: -18px;
     left: 0;
     height: 100px;
     width: auto;
